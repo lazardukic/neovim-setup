@@ -1,0 +1,145 @@
+Link to full detailed cheatsheet:
+https://www.josean.com/posts/vim-essentials-cheatsheet
+
+0 - start of line
+$ - end of line
+
+^ - first non-blank character
+
+f - find, goes to closest character
+F - find, backwards
+
+t - towards, goes before closest character 
+T - towards, backwards
+
+; - repeat last command forwards
+, - repeat last command backwards
+
+w - start of next word
+W - start of next WORD
+
+b - start of previous word
+B - start of previous WORD
+
+e - end of next word
+E - end of next WORD
+
+ge - end of previous word
+gE - end of previous WORD
+
+{ - paragraph up
+} - paragraph down
+
+G  - last line of file
+gg - first line of file
+
+17G - got to line 17
+2w  - move forward two words
+
+% - if cursor is on a ([{, toggle between opening/closing
+[ - when cursor is between ([{, goes closing
+] - when cursor is between ([{, goes to opening
+
+ctrl + F - full screen, fowards
+ctrl + B - full screen, backwards
+ctrl + D - half screen, down
+ctrl + U - half screen, up
+
+zz - center cursor line
+zt - cursor line at top 
+zb - cursor line at bottom
+
+ctrl + E - scroll down
+ctrl + Y - scroll up
+
+/     - find in file
+n     - next search result
+N     - previous search result
+:nohl - clear search results
+*     - search word under cursor
+
+Some particular vim movevements will add entries to the "jump list"
+ctrl + O - previous in jumplist
+ctrl + I - forwards in jumplist
+
+d   - delete
+d$  - delete to end of line
+D   - same as d$
+
+u        - undo
+3 + u    - execute 3 undos
+ctrl + R - redo
+
+with most editing commands, if you press them twice to execute on whole line
+dd - delete whole line
+
+you can also combine commands and use numbers
+2 + D + W - delete two words
+2 + dd    - delete two lines
+
+c     - short for change, goes into insert mode
+c + e - change until the end of the word 
+
+.     - repeat last change made to file
+3 + . - do the repeated change 3 times
+
+r - short for replace, replaces character
+
+x     - delete single character
+3 + x - delete 3 characters
+
+y   - short for yank, copy
+yy  - copy whole line
+
+p          - paste
+shift + p  - paste above cursor position
+y + $ or Y - copy to end of line
+
+when you delete or change text you are also copying it!
+
+~ - switch gase of current character
+
+esc - escape mode
+i   - enter INSERT mode
+v   - enter VISUAL mode
+:   - enter COMMAND mode
+
+g + U - change to uppercase
+g + u - change to lowercase
+
+really important concept in vim - text objects!
+they can be words, paragraphs, surrounding ([{"< and other
+
+i - short for 'inside'
+a - short for 'around'
+e.g.:
+diw - delete inside word
+dip - delete inside paragraph
+yip - yank inside paragraph
+di( - delete inside (
+da( - delete around (
+di" - delete inside "
+
+use can also use this in visual mode e.g:
+va" - select around "
+
+% - reference to this file
+
+replace text
+:%s/text1/text2/g  - replace text 1 with text in whole file
+:%s/text1/text2/gc - do same but asks for confirmation
+
+other ways to get to INSERT mode
+i - enter insert mode right before cursor
+a - short for append, after cursor
+A - at end of current line
+o - add line below
+O - add line above 
+
+command mode options
+:set relativenumber   - toggles relative line numbers on
+:set norelativenumber - toggles relative line numbers off
+:set number           - toggle line numbers on
+:set nonumber         - toggle line numbers off
+
+
