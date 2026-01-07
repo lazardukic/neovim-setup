@@ -1,0 +1,20 @@
+Session
+- Windows
+- Panes
+
+- example create session:
+tmux new -s Session
+tmux detach
+tmux ls
+tmux attach -t Session
+
+- example new session:
+tmux new -s Session2
+tmux detach
+tmux ls
+tmux attach -t Session2
+
+-----
+Prefix: Ctrl-A
+
+Ctrl-A + S = view created sessions

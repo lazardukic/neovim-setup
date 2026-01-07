@@ -34,3 +34,9 @@ verify with `node -v`
 
 7. copy the files from this repo to the 'nvim' folder you just created
 
+# Setting up TMUX
+
+To setup tmux, copy the .tmux.conf file from the /tmux folder into your ~/ directory.
+
+Follow this guide:
+video and blog: https://www.josean.com/posts/tmux-setup
