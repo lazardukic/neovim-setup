@@ -42,6 +42,7 @@ Prefix + , = rename window
 Prefix + n = cycle between windows
 Prefix + p = cycle other direction
 Prefix + w = view all windows
+Prifix + & = kill window
 
 ----------------
 Pane
