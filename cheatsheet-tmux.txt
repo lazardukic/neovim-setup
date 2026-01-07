@@ -10,6 +10,21 @@ Prefix + r = refresh tmux configuration
 Prefix + I = install plugins from TPM plugin manager
 
 ---------------------
+Copy Mode
+---------------------
+Prefix + [ = toggle copy mode on
+Ctrl + c = exit copy mode
+k = go up
+j = go down
+Shift + k,j = scroll up, cursor stays in position
+Ctrl + u = up half page
+Ctrl + d = down half page
+Ctrl + b = up full page
+Ctrl + f = down full page
+v + motion = select something
+y = yank text
+
+---------------------
 Session
 ---------------------
 tmux new -s Session
@@ -35,8 +50,4 @@ Prefix + | = split vertical
 Prefix + - = split horizontal
 Prefix + h,j,k,l = resize pane
 Prefix + m = maximize/minimize pane
-
-----------------
-Navigation
-----------------
 Ctrl + h,j,k,l = navigate between tmux panes
