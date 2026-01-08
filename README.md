@@ -36,7 +36,11 @@ verify with `node -v`
 
 # Setting up TMUX
 
-To setup tmux, copy the .tmux.conf file from the /tmux folder into your ~/ directory.
+1. brew install tmux
+2. touch ~/.tmux.conf
+3. copy the .tmux.conf file from the /tmux folder into your ~/.tmux.conf file.
+4. install plugin manager: 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
+5. reload plugins [Prefix + I]
 
-Follow this guide:
+Here is a link to the full guide:
 video and blog: https://www.josean.com/posts/tmux-setup
